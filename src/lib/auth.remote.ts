@@ -11,7 +11,7 @@ export const login = form(() => {
 
 	cookies.set("test-user", name, { path: "/" });
 
-	redirect(303, resolve("/nested/[name]/foo", { name }));
+	redirect(303, resolve("/nested/foo/bar"));
 });
 
 export const logout = form(async () => {
